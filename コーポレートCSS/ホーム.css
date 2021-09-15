@@ -1,0 +1,277 @@
+header{
+  display: flex;
+  justify-content: space-between;
+}
+header:hover{
+  opacity: 0.6;
+}
+.logo{
+  margin-left: 20px;
+}
+.logo_img{
+  width: 30px;
+}
+.header_menu{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.header_menu>li{
+  font-weight: bold;
+}
+
+/* ここまでheader */
+
+main{
+  text-align: 1.7;
+}
+
+/*タイトル*/
+
+.ttl{
+  background: url(../コーポレート画像/mv.png) no-repeat;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ttl_content{
+  width: 60vw;
+  color: white;
+  font-weight: bold;
+}
+.ttl_content1{
+  font-size: 45px;
+}
+.ttl_content2{
+  text-align: center;
+}
+
+/* 株式会社TECHの想い */
+
+.itr{
+  background-color: black;
+  padding: 40px;
+  color: white;
+}
+.itr_text1{
+  font-size: 23px;
+  text-align: center;
+}
+.itr_text2{
+  margin-left: 46px;
+}
+
+/* 事業内容 */
+
+.service{
+  margin: 60px 80px;
+}
+.service_ttl{
+  font-size: 30px;
+  text-align: center;
+}
+.cards{
+  display: flex;
+  flex-wrap: wrap;
+}
+.card_left,.card_right{
+  width: 42vw;
+}
+.card_img{
+  width: 42vw;
+}
+.card_right{
+ margin-left: 40px;
+}
+.service_btn__container{
+  text-align: center;
+}
+.service_btn{
+  width: 27vw;
+  background-color: red;
+  color: white;
+  text-align: center;
+  display: inline-block;
+}
+.service_btn__content{
+  display: inline-block;
+  padding: 15px 0;
+  text-decoration: none;
+  color: white;
+}
+.service_btn:hover{
+  opacity: 0.6;
+}
+
+/* ニュース */
+
+.news{
+  padding: 40px 80px;
+  background-color: black;
+}
+.news_header{
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: 20px;
+}
+.news_ttl{
+  font-size: 29px;
+}
+.news_btn{
+  background-color: red;
+  height: 40px;
+  margin-top: 40px;
+}
+.news_btn__text{
+  padding: 20px 40px 10px;
+  color: white;
+  text-decoration: none;
+}
+.news_content{
+  padding: 20px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+.news_span{
+  font-weight: bold;
+}
+.news_btn,.news_content:hover{
+  opacity: 0.6;
+}
+
+/* 社員ブログ */
+
+.blog{
+  margin: 60px 120px;
+}
+.blog_ttl{
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.blog_cards{
+  display: flex;
+  justify-content: space-between;
+}
+.blog_card{
+  width: 25vw;
+}
+.blog_card__img{
+  background: url(../コーポレート画像/blog.png) no-repeat center/25vw;
+  height: 250px;
+}
+.blog_card__img:hover{
+  opacity: 0.6;
+}
+.blog_card__content__ttl{
+  font-weight: bold;
+  font-size: 19px;
+}
+.blog_show{
+  width: 25vw;
+  margin: 30px auto 50px;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.blog_show:hover{
+  opacity: 0.6;
+}
+.blog_show__content{
+  padding: 10px 40px;
+  text-decoration: none;
+  color: white;
+
+}
+
+/* 会社概要・採用情報 */
+
+.info{
+  display: flex;
+  height: 250px;
+  color: white;
+  font-size: 23px;
+  margin-bottom: 40px;
+}
+.company_btn,.recruit_btn{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.company_btn{
+  background-color: red;
+}
+.company_btn:hover{
+  opacity: 0.6;
+}
+.company_info{
+  text-decoration:none;
+  color: white;
+}
+.recruit_btn{
+  background-color: black;
+}
+.recruit_btn:hover{
+  opacity: 0.6;
+}
+.recruit_info{
+  text-decoration:none;
+  color: white;
+}
+
+
+/* お問合せ */
+
+.contact{
+  margin: 60px auto 0;
+  text-align: center;
+  background-color:whitesmoke;
+  padding: 60px 200px 90px ;
+}
+.contact_ttl{
+  font-size: 23px;
+  font-weight: bold;
+}
+.contact_btn{
+  padding: 10px 100px;
+  background-color: red;
+  color: white;
+  display: inline-block;
+}
+.contact_btn:hover{
+  opacity: 0.6;
+}
+.contact_btn__content{
+  text-decoration: none;
+  color: white;
+}
+
+/* footer */
+
+footer{
+  background-color: black;
+  color: white;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 90px;
+}
+footer>ul{
+  list-style: none;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+footer li{
+  padding-left: 12px;
+  color: white;
+  text-decoration: none;
+}

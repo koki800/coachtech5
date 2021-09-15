@@ -1,0 +1,22 @@
+.bussines{
+  margin: 60px;
+}
+.bussines_contents__top{
+  display: flex;
+  padding: 30px 0 40px;
+  border-top border-bottom: black solid 1px;
+}
+.bussines_contents{
+  display: flex;
+  padding: 30px 0 40px;
+  border-bottom: black solid 1px;
+}
+.bussines_img{
+  width: 30vw;
+}
+.bussines_content{
+  margin-left: 40px;
+}
+.bussines_content__ttl{
+  font-size: 30px;
+}
