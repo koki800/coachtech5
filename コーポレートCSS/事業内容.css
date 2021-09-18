@@ -1,22 +1,126 @@
+header{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  margin:10px 0 0 20px;
+}
+.logo:hover{
+  opacity: 0.6;
+}
+.logo_img{
+  width: 90px;
+}
+.header_menu{
+  display: flex;
+  list-style: none;
+}
+.header_menu li:hover{
+  opacity: 0.6;
+}
+.header_menu li a{
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+}
+
+/*タイトル*/
+
+.ttl{
+  background: url(../コーポレート画像/mv.png) no-repeat center/cover;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ttl_content{
+  width: 20vw;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+.ttl_content1{
+  font-size: 45px;
+}
+.ttl_content2{
+  text-align: center;
+}
+
 .bussines{
-  margin: 60px;
+  margin: 60px 120px;
 }
 .bussines_contents__top{
   display: flex;
-  padding: 30px 0 40px;
-  border-top border-bottom: black solid 1px;
+  padding: 30px 0 30px;
+  border: black solid;
+  border-width: 1px 0;
 }
 .bussines_contents{
   display: flex;
-  padding: 30px 0 40px;
+  padding: 30px 0 30px;
   border-bottom: black solid 1px;
 }
 .bussines_img{
-  width: 30vw;
+  width: 20vw;
 }
 .bussines_content{
   margin-left: 40px;
 }
 .bussines_content__ttl{
-  font-size: 30px;
+  font-size: 25px;
+}
+
+/* お問合せ */
+
+.contact{
+  margin: 60px auto 0;
+  text-align: center;
+  background-color:whitesmoke;
+  padding: 60px 200px 90px ;
+}
+.contact_ttl{
+  font-size: 23px;
+  font-weight: bold;
+}
+.contact_btn{
+  padding: 10px 100px;
+  background-color: red;
+  color: white;
+  display: inline-block;
+}
+.contact_btn:hover{
+  opacity: 0.6;
+}
+.contact_btn__content{
+  text-decoration: none;
+  color: white;
+}
+
+/* footer */
+
+footer{
+  background-color: black;
+  color: white;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 90px;
+}
+footer ul{
+  list-style: none;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+footer li{
+  padding-left: 12px;
+}
+footer li a{
+  text-decoration: none;
+  color: white;
+}
+footer li a:hover{
+  opacity: 0.6;
 }

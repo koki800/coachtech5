@@ -1,0 +1,126 @@
+header{
+  display: flex;
+  justify-content: space-between;
+}
+.logo{
+  margin:10px 0 0 20px;
+}
+.logo:hover{
+  opacity: 0.6;
+}
+.logo_img{
+  width: 90px;
+}
+.header_menu{
+  display: flex;
+  list-style: none;
+}
+.header_menu li:hover{
+  opacity: 0.6;
+}
+.header_menu li a{
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
+}
+
+/*タイトル*/
+
+.ttl{
+  background: url(../コーポレート画像/mv.png) no-repeat center/cover;
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ttl_content{
+  width: 20vw;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+}
+.ttl_content1{
+  font-size: 45px;
+}
+.ttl_content2{
+  text-align: center;
+}
+
+/* ブログ */
+
+.blog{
+  margin: 90px 120px;
+}
+.blog_cards{
+  display: flex;
+  justify-content: space-between;
+}
+.blog_card{
+  width: 25vw;
+}
+.blog_card__img{
+  background: url(../コーポレート画像/blog.png) no-repeat center/25vw;
+  height: 230px;
+}
+.blog_card__img:hover{
+  opacity: 0.6;
+}
+.blog_card__content__ttl{
+  font-weight: bold;
+  font-size: 19px;
+}
+
+/* お問合せ */
+
+.contact{
+  margin: 60px auto 0;
+  text-align: center;
+  background-color:whitesmoke;
+  padding: 60px 200px 90px ;
+}
+.contact_ttl{
+  font-size: 23px;
+  font-weight: bold;
+}
+.contact_btn{
+  padding: 10px 100px;
+  background-color: red;
+  color: white;
+  display: inline-block;
+}
+.contact_btn:hover{
+  opacity: 0.6;
+}
+.contact_btn__content{
+  text-decoration: none;
+  color: white;
+}
+
+/* footer */
+
+footer{
+  background-color: black;
+  color: white;
+  font-size: small;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 90px;
+}
+footer ul{
+  list-style: none;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+footer li{
+  padding-left: 12px;
+}
+footer li a{
+  text-decoration: none;
+  color: white;
+}
+footer li a:hover{
+  opacity: 0.6;
+}

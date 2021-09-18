@@ -1,23 +1,36 @@
+body{
+  border: black solid 1px;
+  box-sizing: border-box;
+  width: 100%;
+}
 header{
   display: flex;
   justify-content: space-between;
-}
-header:hover{
-  opacity: 0.6;
+  position: fixed;
+  width: 100%;
+  background-color: white;
 }
 .logo{
-  margin-left: 20px;
+  margin:10px 0 0 20px;
+}
+.logo:hover{
+  opacity: 0.6;
 }
 .logo_img{
-  width: 30px;
+  width: 90px;
 }
 .header_menu{
   display: flex;
   list-style: none;
-  justify-content: space-around;
 }
-.header_menu>li{
+.header_menu li:hover{
+  opacity: 0.6;
+}
+.header_menu li a{
   font-weight: bold;
+  text-decoration: none;
+  color: black;
+  margin-right: 30px;
 }
 
 /* ここまでheader */
@@ -25,12 +38,12 @@ header:hover{
 main{
   text-align: 1.7;
 }
-
 /*タイトル*/
 
 .ttl{
-  background: url(../コーポレート画像/mv.png) no-repeat;
+  background: url(../コーポレート画像/mv.png) no-repeat center/cover;
   height: 700px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -124,6 +137,9 @@ main{
   height: 40px;
   margin-top: 40px;
 }
+.news_btn:hover{
+  opacity: 0.6;
+}
 .news_btn__text{
   padding: 20px 40px 10px;
   color: white;
@@ -134,11 +150,11 @@ main{
   margin-bottom: 10px;
   background-color: white;
 }
+.news_content:hover{
+  opacity: 0.6;
+}
 .news_span{
   font-weight: bold;
-}
-.news_btn,.news_content:hover{
-  opacity: 0.6;
 }
 
 /* 社員ブログ */
@@ -264,7 +280,7 @@ footer{
   justify-content: space-between;
   padding-left: 90px;
 }
-footer>ul{
+footer ul{
   list-style: none;
   margin-right: 50px;
   display: flex;
@@ -272,6 +288,11 @@ footer>ul{
 }
 footer li{
   padding-left: 12px;
-  color: white;
+}
+footer li a{
   text-decoration: none;
+  color: white;
+}
+footer li a:hover{
+  opacity: 0.6;
 }
