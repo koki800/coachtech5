@@ -1,6 +1,11 @@
 header{
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  height: 80px;
 }
 .logo{
   margin:10px 0 0 20px;
@@ -40,12 +45,6 @@ header{
   color: white;
   font-weight: bold;
   font-size: 30px;
-}
-.ttl_content1{
-  font-size: 45px;
-}
-.ttl_content2{
-  text-align: center;
 }
 
 .bussines{
@@ -89,6 +88,7 @@ header{
   background-color: red;
   color: white;
   display: inline-block;
+  margin-top: 20px;
 }
 .contact_btn:hover{
   opacity: 0.6;
@@ -106,7 +106,8 @@ footer{
   font-size: small;
   display: flex;
   justify-content: space-between;
-  padding-left: 90px;
+  padding: 25px 90px;
+
 }
 footer ul{
   list-style: none;
