@@ -86,7 +86,7 @@ button{
   font-weight: bold;
   cursor: pointer;
 }
-.tooltip{
+.tooltip,.tooltip2{
   display: none;
   background-color: lightgray;
   font-weight: lighter;
