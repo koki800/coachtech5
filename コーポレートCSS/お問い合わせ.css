@@ -86,6 +86,11 @@ button{
   font-weight: bold;
   cursor: pointer;
 }
+.tooltip{
+  display: none;
+  background-color: lightgray;
+  font-weight: lighter;
+}
 
 /* footer */
 
