@@ -90,6 +90,7 @@ button{
   display: none;
   background-color: lightgray;
   font-weight: lighter;
+  z-index: 1;
 }
 
 /* footer */
