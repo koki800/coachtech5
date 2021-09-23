@@ -1,32 +1,49 @@
 const target = document.getElementsByTagName("input");
 
-const func = () => {
+// 名前のツールチップ
+
+const func = (e) => {
   const content = target[1].textContent;
 
   if (content == null) {
-    document.getElementsById("tooltip").style.display = "block"
+    document.getElementById("tooltip").style.display = "block";
+    document.getElementById("tooltip").style.top = e.clientY;
+    document.getElementById("tooltip").style.left = e.clientX;
   };
 };
-const setFunc = setTimeout(func, 1000);
+const setFunc = () => {
+  setTimeout(func, 1000)
+};
 target[1].addEventListener("mouseover",setFunc );
 
-const func1 = () => {
+// メールアドレスのツールチップ
+
+const func1 = (e) => {
   const content = target[2].textContent;
 
   if (content == null) {
-    document.getElementsById("tooltip").style.display = "block"
+    document.getElementById("tooltip").style.display = "block";
+    document.getElementById("tooltip").style.top = e.clientY;
+    document.getElementById("tooltip").style.left = e.clientX;
   } else if (content.includes("@") == false) {
-    document.getElementsById("tooltip2").style.display = "block";
-
-    const span = document.getElementsById("tooltip2_text").firstChild;
+    document.getElementById("tooltip2").style.display = "block";
+    document.getElementById("tooltip2").style.top = e.clientY;
+    document.getElementById("tooltip2").style.left = e.clientX;
+    const span = document.getElementById("tooltip2_text").firstChild;
     span.textContent = content;
   };
 };
-const setFunc1 = setTimeout(func1, 1000)
+const setFunc1 = () => {
+  setTimeout(func1, 1000)
+}
 target[2].addEventListener("mouseover", setFunc1);
 
+// ツールチップが消える
+
 const func2 = () => {
-  document.getElementsByClassName("tooltip").style.display = "none";
+  document.getElementByClassName("tooltip").style.display = "none";
 };
-const setFunc2 = setTimeout(func2, 1000);
+const setFunc2 = () => {
+  setTimeout(func2, 1000)
+};
 target[1, 2].addEventListener("mouseleave",setFunc2);
