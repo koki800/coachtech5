@@ -1,9 +1,10 @@
 const target = document.getElementsByTagName("input");
 
-// 名前のツールチップ
+//ツールチップ出現
 
-const func = (e) => {
-  const content = target[1].textContent;
+for (num = 1; num < 3; num++){
+  const func = (e) => {
+  const content = target[num].textContent;
 
   if (content.length == 0) {
     document.getElementById("tooltip").style.display = "block";
@@ -14,34 +15,14 @@ const func = (e) => {
 const setFunc = (e) => {
   setTimeout(func, 300,e)
 };
-target[1].addEventListener("mouseover",setFunc);
-
-// メールアドレスのツールチップ
-
-const func1 = (e) => {
-  const content = target[2].textContent;
-
-  if (content.length == 0) {
-    document.getElementById("tooltip").style.display = "block";
-    document.getElementById("tooltip").style.top = e.pageY + "px";
-    document.getElementById("tooltip").style.left = e.pageX + "px";
-  } else if (content.includes("@") == false) {
-    document.getElementById("tooltip2").style.display = "block";
-    document.getElementById("tooltip2").style.top = e.pageY + "px";
-    document.getElementById("tooltip2").style.left = e.pageX + "px";
-    const span = document.getElementById("tooltip2_text").firstChild;
-    span.textContent = content;
-  };
-};
-const setFunc1 = (e) => {
-  setTimeout(func1, 300,e)
+target[num].addEventListener("mouseover",setFunc);
 }
-target[2].addEventListener("mouseover", setFunc1);
+
 
 // ツールチップが消える
 
 const func2 = () => {
-  document.getElementsById("tooltip").style.display = "none";
+  document.getElementById("tooltip").style.display = "none";
 };
 const setFunc2 = () => {
   setTimeout(func2, 300)
