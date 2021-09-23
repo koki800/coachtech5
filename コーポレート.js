@@ -7,12 +7,12 @@ const func = (e) => {
 
   if (content.length == 0) {
     document.getElementById("tooltip").style.display = "block";
-    document.getElementById("tooltip").style.top = e.clientY + "px";
-    document.getElementById("tooltip").style.left = e.clientX + "px";
+    document.getElementById("tooltip").style.top = e.pageY + "px";
+    document.getElementById("tooltip").style.left = e.pageX + "px";
   };
 };
 const setFunc = (e) => {
-  setTimeout(func, 500,e)
+  setTimeout(func, 300,e)
 };
 target[1].addEventListener("mouseover",setFunc);
 
@@ -23,27 +23,27 @@ const func1 = (e) => {
 
   if (content.length == 0) {
     document.getElementById("tooltip").style.display = "block";
-    document.getElementById("tooltip").style.top = e.clientY + "px";
-    document.getElementById("tooltip").style.left = e.clientX + "px";
+    document.getElementById("tooltip").style.top = e.pageY + "px";
+    document.getElementById("tooltip").style.left = e.pageX + "px";
   } else if (content.includes("@") == false) {
     document.getElementById("tooltip2").style.display = "block";
-    document.getElementById("tooltip2").style.top = e.clientY + "px";
-    document.getElementById("tooltip2").style.left = e.clientX + "px";
+    document.getElementById("tooltip2").style.top = e.pageY + "px";
+    document.getElementById("tooltip2").style.left = e.pageX + "px";
     const span = document.getElementById("tooltip2_text").firstChild;
     span.textContent = content;
   };
 };
 const setFunc1 = (e) => {
-  setTimeout(func1, 500,e)
+  setTimeout(func1, 300,e)
 }
 target[2].addEventListener("mouseover", setFunc1);
 
 // ツールチップが消える
 
 const func2 = () => {
-  document.getElementsByClassName("tooltip").style.display = "none";
+  document.getElementsById("tooltip").style.display = "none";
 };
 const setFunc2 = () => {
-  setTimeout(func2, 500)
+  setTimeout(func2, 300)
 };
 target[1, 2].addEventListener("mouseleave",setFunc2);
