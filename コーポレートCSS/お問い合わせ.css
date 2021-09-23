@@ -90,6 +90,8 @@ button{
   display: none;
   background-color: lightgray;
   font-weight: lighter;
+  font-size: 10px;
+  color: rgb(53, 45, 45);
   z-index: 1;
   position: absolute;
   top: 0;
