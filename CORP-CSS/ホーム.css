@@ -86,7 +86,7 @@ header {
   .header_menu li{
     margin-top: 50px;
   }
-  .header_menu a{
+  .header_menu li a{
     color: blue;
   }
   .in{
