@@ -1,3 +1,15 @@
+// ハンバーガーメニュー
+// ドロワーメニュー
+
+const target0 = document.getElementById("menu");
+target0.addEventListener('click', () => {
+  target0.classList.toggle('open');
+  const drawer = document.getElementById("header_menu");
+  drawer.classList.toggle('in');
+});
+
+// ツールチップ（お問い合わせページ）
+
 const target = document.getElementsByTagName("input");
 
 //ツールチップ出現

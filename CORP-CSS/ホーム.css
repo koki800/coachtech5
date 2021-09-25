@@ -1,46 +1,111 @@
-header{
+header {
   display: flex;
   justify-content: space-between;
-  position: fixed; 
+  position: fixed;
   width: 100%;
   background-color: white;
   height: 80px;
   z-index: 1;
 }
-.logo{
-  margin:10px 0 0 20px;
+.logo {
+  margin: 10px 0 0 20px;
 }
-.logo:hover{
+.logo:hover {
   opacity: 0.6;
 }
-.logo_img{
+.logo_img {
   width: 90px;
   margin-top: 15px;
 }
-.header_menu{
+.header_menu {
   display: flex;
   list-style: none;
   align-items: center;
 }
-.header_menu li:hover{
+.header_menu li:hover {
   opacity: 0.6;
 }
-.header_menu li a{
+.header_menu li a {
   font-weight: bold;
   text-decoration: none;
   color: black;
   margin-right: 30px;
 }
+.menu {
+  width: 36px;
+  height: 32px;
+  cursor: pointer;
+  position: relative;
+  right: 20px;
+  top: 20px;
+  display: none;
+}
+
+.menu__line--top,
+.menu__line--middle,
+.menu__line--bottom {
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: #000;
+  position: absolute;
+  transition: 0.5s;
+}
+.menu__line--top {
+  top: 0;
+}
+.menu__line--middle {
+  top: 14px;
+}
+.menu__line--bottom {
+  bottom: 0;
+}
+.menu.open span:nth-of-type(1) {
+  top: 14px;
+  transform: rotate(45deg);
+}
+.menu.open span:nth-of-type(2) {
+  opacity: 0;
+}
+.menu.open span:nth-of-type(3) {
+  top: 14px;
+  transform: rotate(-45deg);
+}
+@media screen and (max-width: 480px) {
+  .header_menu {
+  display: block;  
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  left: -100%;
+  background: #eee;
+  transition: .7s;
+  text-align: center;
+  padding-top: 100px;
+} 
+  .header_menu li{
+    margin-top: 50px;
+  }
+  .header_menu a{
+    color: blue;
+  }
+  .in{
+  transform: translateX(100%);
+}
+  .menu{
+    display: inline-block;
+  }
+}
 
 /* ここまでheader */
 
-main{
+main {
   line-height: 2.2;
 }
 /*タイトル*/
 
-.ttl{
-  background: url(../コーポレート画像/mv.png) no-repeat center/cover;
+.ttl {
+  background: url(../img/mv.png) no-repeat center/cover;
   height: 700px;
   padding-top: 80px;
   width: 100%;
@@ -48,144 +113,145 @@ main{
   justify-content: center;
   align-items: center;
 }
-.ttl_content{
+.ttl_content {
   width: 60vw;
   color: white;
   font-weight: bold;
 }
-.ttl_content1{
+.ttl_content1 {
   font-size: 45px;
 }
-.ttl_content2{
+.ttl_content2 {
   text-align: center;
 }
 
 /* 株式会社TECHの想い */
 
-.itr{
+.itr {
   background-color: black;
   padding: 80px 120px;
   color: white;
 }
-.itr_text1{
+.itr_text1 {
   font-size: 30px;
   font-weight: bold;
 }
 
 /* 事業内容 */
 
-.service{
+.service {
   margin: 60px 80px;
 }
-.service_ttl{
+.service_ttl {
   font-size: 30px;
   text-align: center;
   margin-right: 20px;
 }
-.cards{
+.cards {
   display: flex;
   flex-wrap: wrap;
 }
-.card_left,.card_right{
+.card_left,
+.card_right {
   width: 42vw;
 }
-.card_img{
+.card_img {
   width: 42vw;
 }
-.card_right{
- margin-left: 40px;
+.card_right {
+  margin-left: 40px;
 }
-.service_btn__container{
+.service_btn__container {
   text-align: center;
   margin-top: 50px;
 }
-.service_btn{
+.service_btn {
   width: 27vw;
   background-color: red;
   color: white;
   text-align: center;
   display: inline-block;
 }
-.service_btn__content{
+.service_btn__content {
   display: inline-block;
   padding: 15px 0;
   text-decoration: none;
   color: white;
 }
-.service_btn:hover{
+.service_btn:hover {
   opacity: 0.6;
 }
 
 /* ニュース */
 
-.news{
+.news {
   padding: 40px 80px;
   background-color: black;
 }
-.news_header{
+.news_header {
   display: flex;
   justify-content: space-between;
   color: white;
   margin-bottom: 20px;
 }
-.news_ttl{
+.news_ttl {
   font-size: 29px;
 }
-.news_btn{
+.news_btn {
   background-color: red;
   height: 40px;
   padding: 0 20px;
   margin-top: 10px;
 }
-.news_btn:hover{
+.news_btn:hover {
   opacity: 0.6;
 }
-.news_btn__text{
+.news_btn__text {
   color: white;
   text-decoration: none;
 }
-.news_content{
+.news_content {
   padding: 20px;
   margin-bottom: 10px;
   background-color: white;
 }
-.news_content:hover{
+.news_content:hover {
   opacity: 0.6;
 }
-.news_span{
+.news_span {
   font-weight: bold;
 }
 
 /* 社員ブログ */
 
-.blog{
+.blog {
   margin: 60px 120px;
 }
-.blog_ttl{
+.blog_ttl {
   font-size: 23px;
   font-weight: bold;
   margin-bottom: 20px;
   text-align: center;
 }
-.blog_cards{
+.blog_cards {
   display: flex;
   justify-content: space-between;
 }
-.blog_card{
+.blog_card {
   width: 25vw;
 }
-.blog_card__img{
-  background: url(../コーポレート画像/blog.png) no-repeat center/25vw;
+.blog_card__img {
+  background: url(../img/blog.png) no-repeat center/25vw;
   height: 250px;
 }
-.blog_card__img:hover{
+.blog_card__img:hover {
   opacity: 0.6;
 }
-.blog_card__content__ttl{
+.blog_card__content__ttl {
   font-weight: bold;
   font-size: 19px;
 }
-.blog_show{
+.blog_show {
   width: 25vw;
   margin: 30px auto 50px;
   background-color: red;
@@ -196,104 +262,102 @@ main{
   justify-content: center;
   align-items: center;
 }
-.blog_show:hover{
+.blog_show:hover {
   opacity: 0.6;
 }
-.blog_show__content{
+.blog_show__content {
   padding: 10px 40px;
   text-decoration: none;
   color: white;
-
 }
 
 /* 会社概要・採用情報 */
 
-.info{
+.info {
   display: flex;
   height: 250px;
   color: white;
   font-size: 23px;
   margin-bottom: 40px;
 }
-.company_btn,.recruit_btn{
+.company_btn,
+.recruit_btn {
   width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.company_btn{
+.company_btn {
   background-color: red;
 }
-.company_btn:hover{
+.company_btn:hover {
   opacity: 0.6;
 }
-.company_info{
-  text-decoration:none;
+.company_info {
+  text-decoration: none;
   color: white;
 }
-.recruit_btn{
+.recruit_btn {
   background-color: black;
 }
-.recruit_btn:hover{
+.recruit_btn:hover {
   opacity: 0.6;
 }
-.recruit_info{
-  text-decoration:none;
+.recruit_info {
+  text-decoration: none;
   color: white;
 }
-
 
 /* お問合せ */
 
-.contact{
+.contact {
   margin: 60px auto 0;
   text-align: center;
-  background-color:whitesmoke;
-  padding: 60px 200px 90px ;
+  background-color: whitesmoke;
+  padding: 60px 200px 90px;
 }
-.contact_ttl{
+.contact_ttl {
   font-size: 23px;
   font-weight: bold;
 }
-.contact_btn{
+.contact_btn {
   padding: 10px 100px;
   background-color: red;
   color: white;
   display: inline-block;
   margin-top: 20px;
 }
-.contact_btn:hover{
+.contact_btn:hover {
   opacity: 0.6;
 }
-.contact_btn__content{
+.contact_btn__content {
   text-decoration: none;
   color: white;
 }
 
 /* footer */
 
-footer{
+footer {
   background-color: black;
   color: white;
   font-size: small;
   display: flex;
   justify-content: space-between;
   padding: 25px 90px;
-
 }
-footer ul{
+footer ul {
   list-style: none;
   margin-right: 50px;
   display: flex;
   justify-content: space-around;
 }
-footer li{
+footer li {
   padding-left: 12px;
 }
-footer li a{
+footer li a {
   text-decoration: none;
   color: white;
 }
-footer li a:hover{
+footer li a:hover {
   opacity: 0.6;
 }

@@ -33,7 +33,7 @@ header{
 /*タイトル*/
 
 .ttl{
-  background: url(../コーポレート画像/mv.png) no-repeat center/cover;
+  background: url(../img/mv.png) no-repeat center/cover;
   height: 280px;
   display: flex;
   justify-content: center;

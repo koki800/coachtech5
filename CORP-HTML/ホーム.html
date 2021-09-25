@@ -4,16 +4,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../コーポレートCSS/reset.css">
-  <link rel="stylesheet" href="../コーポレートCSS/ホーム.css">
+  <link rel="stylesheet" href="../CORP-CSS/reset.css">
+  <link rel="stylesheet" href="../CORP-CSS/ホーム.css">
   <title>株式会社TECH</title>
 </head>
 <body>
   <header>
     <a href="" class="logo">
-      <img src="../コーポレート画像/logo.png" alt="" class="logo_img">
+      <img src="../img/logo.png" alt="" class="logo_img">
     </a>
-    <ul class="header_menu">
+    <ul class="header_menu" id="header_menu">
       <li>
         <a href="ホーム.html">
           ホーム
@@ -50,6 +50,12 @@
         </a>
       </li>
     </ul>
+
+    <div class="menu" id="menu">
+      <span class="menu__line--top"></span>
+      <span class="menu__line--middle"></span>
+      <span class="menu__line--bottom"></span>
+    </div>
   </header>
 
 
@@ -82,7 +88,7 @@
       </h2>
       <div class="cards">
         <div class="card_left">
-          <img src="../コーポレート画像/service1.png" alt="画像" class="card_img">
+          <img src="../img/service1.png" alt="画像" class="card_img">
           <h3 class="card_ttl">
             IT人材育成人材育成事業
           </h3>
@@ -91,7 +97,7 @@
           </p>
         </div>
         <div class="card_right">
-          <img src="../コーポレート画像/service2.png" alt="画像" class="card_img">
+          <img src="../img/service2.png" alt="画像" class="card_img">
           <h3 class="card_ttl">
             コーチング事業
           </h3>
@@ -100,7 +106,7 @@
           </p>
         </div>
         <div class="card_left">
-          <img src="../コーポレート画像/service3.png" alt="画像" class="card_img">
+          <img src="../img/service3.png" alt="画像" class="card_img">
           <h3 class="card_ttl">
             ITコンサル事業
           </h3>
@@ -109,7 +115,7 @@
           </p>
         </div>
         <div class="card_right">
-          <img src="../コーポレート画像/service4.png" alt="画像" class="card_img">
+          <img src="../img/service4.png" alt="画像" class="card_img">
           <h3 class="card_ttl">
             デジタルトランスフォーメーション事業
           </h3>
@@ -284,5 +290,6 @@
         </a></li>
     </ul>
   </footer>
+ <script src="../コーポレート.js"></script> 
 </body>
 </html>

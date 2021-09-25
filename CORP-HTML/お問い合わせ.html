@@ -5,15 +5,15 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../reset.css">
-  <link rel="stylesheet" href="../コーポレートCSS/ニュース.css">
+  <link rel="stylesheet" href="../CORP-CSS/reset.css">
+  <link rel="stylesheet" href="../CORP-CSS/お問い合わせ.css">
   <title>株式会社TECH</title>
 </head>
 
 <body>
   <header>
     <a href="" class="logo">
-      <img src="../コーポレート画像/logo.png" alt="" class="logo_img">
+      <img src="../img/logo.png" alt="" class="logo_img">
     </a>
     <ul class="header_menu">
       <li>
@@ -54,52 +54,45 @@
     </ul>
   </header>
 
-
   <main>
     <div class="ttl">
       <p class="ttl_content">
-        ニュース
+        お問い合わせ
       </p>
     </div>
-
-
-    <div class="news">
-      <p class="news_content">
-        2019/07/17
-        <span class="news_span">
-          会社を創業しました。
-        </span>
-      </p>
-      <p class="news_content">
-        2020/04/01
-        <span class="news_span">
-          資金調達を行いました。
-          　　　　　</span>
-      </p>
-      <p class="news_content">
-        2020/10/01
-        <span class="news_span">
-          東京新聞に掲載されました。
-        </span>
-      </p>
-    </div>
-
 
     <div class="contact">
-      <h2 class="contact_ttl">
-        お問い合わせ
-      </h2>
-      <p class="contact_text">
-        お仕事のご依頼や採用に関してはお問い合わせにて承っております。
-      </p>
-      <div class="contact_btn">
-        <a href="" class="contact_btn__content">
-          お問い合わせ
-        </a>
-      </div>
+      <form action="" class="contact_form">
+        <h3 class="contact_item">
+          会社名
+        </h3>
+        <input type="text" name="copany">
+        <h3 class="contact_item">
+          お名前 <span>*</span>
+        </h3>
+        <input type="text" name="name">
+        <h3 class="contact_item">
+          メールアドレス <span>*</span>
+        </h3>
+        <input type="email" name="email">
+        <h3 class="contact_item">
+          お問い合わせ内容 <span>*</span>
+        </h3>
+        <textarea name="textarea" id="" cols="77" rows="8"></textarea>
+        <div class="button_container">
+          <button type="submit" name="button">
+            お申し込み
+          </button>
+        </div>
+        <div class="tooltip" id="tooltip">
+          <p class="tooltip_text">
+            このフィールドを入力してください。
+          </p>
+        </div>
+      </form>
     </div>
   </main>
-
+  
   
   <footer>
     <p class="copyright">
@@ -147,5 +140,6 @@
         </a></li>
     </ul>
   </footer>
+  <script src="../コーポレート.js"></script>
 </body>
-</html>
+ </html>

@@ -6,7 +6,6 @@ header{
   width: 100%;
   background-color: white;
   height: 80px;
-  z-index: 1;
 }
 .logo{
   margin:10px 0 0 20px;
@@ -16,10 +15,12 @@ header{
 }
 .logo_img{
   width: 90px;
+  margin-top: 15px;
 }
 .header_menu{
   display: flex;
   list-style: none;
+  align-items: center;
 }
 .header_menu li:hover{
   opacity: 0.6;
@@ -31,10 +32,16 @@ header{
   margin-right: 30px;
 }
 
+/* ここまでheader */
+
+main{
+  line-height: 2.2;
+}
+
 /*タイトル*/
 
 .ttl{
-  background: url(../コーポレート画像/mv.png) no-repeat center/cover;
+  background: url(../img/mv.png) no-repeat center/cover;
   height: 280px;
   display: flex;
   justify-content: center;
@@ -47,63 +54,48 @@ header{
   font-weight: bold;
   font-size: 30px;
 }
-.ttl_content1{
-  font-size: 45px;
-}
-.ttl_content2{
-  text-align: center;
-}
-
-/* ブログ */
-
-.blog{
-  margin: 90px 120px;
-}
-.blog_cards{
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.blog_card{
-  width: 25vw;
-}
-.blog_card__img{
-  background: url(../コーポレート画像/blog.png) no-repeat center/25vw;
-  height: 230px;
-}
-.blog_card__img:hover{
-  opacity: 0.6;
-}
-.blog_card__content__ttl{
-  font-weight: bold;
-  font-size: 19px;
-}
-
-/* お問合せ */
 
 .contact{
-  margin: 60px auto 0;
-  text-align: center;
-  background-color:whitesmoke;
-  padding: 60px 200px 90px ;
+  padding:  100px 150px;
 }
-.contact_ttl{
-  font-size: 23px;
+h3{
   font-weight: bold;
+  margin-bottom: 10px;
 }
-.contact_btn{
-  padding: 10px 100px;
-  background-color: red;
+span{
+  color: red;
+}
+input{
+  margin-bottom: 20px;
+  width: 100%;
+  line-height: 23px;
+}
+textarea{
+  width: 100%;
+}
+.button_container{
+  text-align: center;
+}
+button{
+  background-color: black;
   color: white;
-  display: inline-block;
-  margin-top: 20px;
+  width: 20vw;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 50px;
+  font-weight: bold;
+  cursor: pointer;
 }
-.contact_btn:hover{
-  opacity: 0.6;
-}
-.contact_btn__content{
-  text-decoration: none;
-  color: white;
+.tooltip{
+  display: none;
+  background-color: lightgray;
+  font-weight: lighter;
+  font-size: 10px;
+  color: rgb(53, 45, 45);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* footer */
