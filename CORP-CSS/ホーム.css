@@ -71,7 +71,7 @@ header {
   top: 14px;
   transform: rotate(-45deg);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .header_menu {
   display: block;  
   position: absolute;
@@ -124,6 +124,12 @@ main {
 .ttl_content2 {
   text-align: center;
 }
+@media screen and (max-width: 768px){
+  .ttl_content{
+    width: 80vw;
+    margin-top: 60px;
+  }
+}
 
 /* 株式会社TECHの想い */
 
@@ -156,7 +162,7 @@ main {
   width: 42vw;
 }
 .card_img {
-  width: 42vw;
+  width: 100%;
 }
 .card_right {
   margin-left: 40px;
@@ -166,11 +172,11 @@ main {
   margin-top: 50px;
 }
 .service_btn {
-  width: 27vw;
   background-color: red;
   color: white;
   text-align: center;
   display: inline-block;
+  width: 27vw;
 }
 .service_btn__content {
   display: inline-block;
@@ -180,6 +186,22 @@ main {
 }
 .service_btn:hover {
   opacity: 0.6;
+}
+@media screen and (max-width: 768px){
+  .card_left,
+.card_right {
+  width: 100%;
+}
+  .card_right {
+  margin-left: 0;
+}
+.service_btn {
+  background-color: red;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  width: 50vw;
+}
 }
 
 /* ニュース */
@@ -270,6 +292,22 @@ main {
   text-decoration: none;
   color: white;
 }
+@media screen and (max-width: 768px){
+  .blog {
+  margin: 30px 80px;
+}
+  .blog_cards {
+  display: block;
+} .blog_card {
+  width: 100%;
+}
+.blog_card__img {
+  background: url(../img/blog.png) no-repeat center/100%;
+}
+ .blog_show{
+   width: 50vw;
+ }
+}
 
 /* 会社概要・採用情報 */
 
@@ -334,6 +372,11 @@ main {
   text-decoration: none;
   color: white;
 }
+@media screen and (max-width: 768px){
+  .contact{
+    padding: 50px;
+  }
+}
 
 /* footer */
 
@@ -360,4 +403,20 @@ footer li a {
 }
 footer li a:hover {
   opacity: 0.6;
+}
+@media screen and (max-width: 768px){
+  footer{
+    display: block;
+    padding: 50px;
+    text-align: center;
+  }
+  footer ul{
+    display: block;
+  }
+  footer li{
+    padding-top: 30px;
+  }
+  .part{
+    display: none;
+  }
 }

@@ -71,7 +71,7 @@ header{
   top: 14px;
   transform: rotate(-45deg);
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .header_menu {
   display: block;  
   position: absolute;
@@ -119,6 +119,11 @@ main{
   font-weight: bold;
   font-size: 30px;
 }
+@media screen and (max-width: 768px){
+  .ttl_content{
+    width: 50vw;
+  }
+}
 
 .contact{
   padding:  100px 150px;
@@ -162,6 +167,11 @@ button{
   top: 0;
   left: 0;
 }
+@media screen and (max-width: 768px){
+  .contact{
+  padding:  50px 80px;
+}
+}
 
 /* footer */
 
@@ -189,4 +199,20 @@ footer li a{
 }
 footer li a:hover{
   opacity: 0.6;
+}
+@media screen and (max-width: 768px){
+  footer{
+    display: block;
+    padding: 50px;
+    text-align: center;
+  }
+  footer ul{
+    display: block;
+  }
+  footer li{
+    padding-top: 30px;
+  }
+  .part{
+    display: none;
+  }
 }
