@@ -117,12 +117,10 @@ main {
   width: 60vw;
   color: white;
   font-weight: bold;
+  text-align: center;
 }
 .ttl_content1 {
   font-size: 45px;
-}
-.ttl_content2 {
-  text-align: center;
 }
 @media screen and (max-width: 768px){
   .ttl_content{
@@ -406,12 +404,14 @@ footer li a:hover {
 }
 @media screen and (max-width: 768px){
   footer{
-    display: block;
     padding: 50px;
-    text-align: center;
+  }
+  .copyright{
+    margin: 100px 0 0 100px;
   }
   footer ul{
     display: block;
+    margin-right: 100px;
   }
   footer li{
     padding-top: 30px;
@@ -419,4 +419,16 @@ footer li a:hover {
   .part{
     display: none;
   }
+}
+@media screen and (max-width: 480px){
+   footer{
+     display: block;
+     text-align: center;
+   }
+   .copyright{
+     margin: 0;
+   }
+   footer ul{
+     margin-right: 0;
+   }
 }
