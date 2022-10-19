@@ -31,6 +31,9 @@ header{
   color: black;
   margin-right: 30px;
 }
+
+/*ハンバーガーメニュー*/
+
 .menu {
   width: 36px;
   height: 32px;
@@ -72,17 +75,23 @@ header{
   transform: rotate(-45deg);
 }
 @media screen and (max-width: 768px) {
+  .menu {
+    display: inline-block;
+  }
+
+/*ドロワーメニュー*/
+
   .header_menu {
-  display: block;  
+  display: block;
   position: absolute;
   height: 100vh;
   width: 100%;
-  left: -100%;
-  background: #eee;
+  right: 100%;
+  background: white;
   transition: .7s;
   text-align: center;
   padding-top: 100px;
-} 
+  }
   .header_menu li{
     margin-top: 50px;
   }
@@ -90,10 +99,7 @@ header{
     color: blue;
   }
   .in{
-  transform: translateX(100%);
-}
-  .menu{
-    display: inline-block;
+    transform: translateX(100%);
   }
 }
 

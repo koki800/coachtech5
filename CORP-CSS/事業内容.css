@@ -19,6 +19,7 @@ header{
 .header_menu{
   display: flex;
   list-style: none;
+  align-items: center;
 }
 .header_menu li:hover{
   opacity: 0.6;
